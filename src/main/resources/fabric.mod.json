@@ -1,31 +1,30 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "jigsawplacementtweaks",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Jigsaw Placement Tweaks",
+	"description": "This mod tweaks the placement of jigsaw structures. The initial rotation is no longer randomized and jigsaw combinations are no longer fixed based on chunk/position.",
 	"authors": [
-		"Me!"
+		"TheRedBrain"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/TheRedBrain/rpg_mod"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"license": "MIT",
+	"icon": "assets/jigsawplacementtweaks/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"com.github.theredbrain.jigsawplacementtweaks.JigsawPlacementTweaks"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"com.github.theredbrain.jigsawplacementtweaks.JigsawPlacementTweaksClient"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"jigsawplacementtweaks.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "jigsawplacementtweaks.client.mixins.json",
 			"environment": "client"
 		}
 	],
@@ -34,8 +33,5 @@
 		"minecraft": "~1.20.2",
 		"java": ">=17",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }

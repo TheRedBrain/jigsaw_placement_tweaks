@@ -1,9 +1,3 @@
-# Fabric Example Mod
+# Jigsaw Placement Tweaks
 
-## Setup
-
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+This mod tweaks the placement of jigsaw structures. The initial rotation is no longer randomized and jigsaw combinations are no longer fixed based on chunk/position.
